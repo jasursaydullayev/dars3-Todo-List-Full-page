@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --lightImage: url("../public/ligthmodeImage.png");
+  --bg-color: #fff;
+  --bg-color-inputs: #fff;
+  --color-inputs: #000;
+}
+
+@layer {
+  .cite-container {
+    @apply max-w-[541px] mx-auto  px-5;
+  }
+}
+main {
+  @apply flex-grow;
+}
+html,
+main,
+body,
+#root {
+  @apply h-full;
+}
+.wrapper{
+  background-color: var(--bg-color);
+}
+.image {
+  background-image: var(--lightImage);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dark{
+  --lightImage: url("../public/darkmodeImage.png");
+  --bg-color: #171823;
+  --bg-color-inputs: #25273D;
+  --color-inputs: #fff;
+}
+.inputbek{
+  background-color: var(--bg-color-inputs);
+  color: var(--color-inputs);
+}
+.inputbekjon{
+  box-shadow: 0px 25px 40px -20px #C2C3D680;
+}
